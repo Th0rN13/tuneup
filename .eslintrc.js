@@ -1,21 +1,24 @@
 module.exports = {
-  plugins: ['@typescript-eslint'],
+  root: true,
+  parser: "vue-eslint-parser",
   parserOptions: {
-    parser: '@typescript-eslint/parser'
+    parser: "@typescript-eslint/parser",
+  },
+  env: {
+    browser: true,
   },
   rules: {
-    'camelcase': ["off"],
-    'underscores': ["allow"],
-    'operator-linebreak': ["error", "after"],
-    'quotes': ["error", "double", { "avoidEscape": true }],
-    'semi': ["error", "always"],
-    // how to fix <script> additional indent issue?
-    'indent': ["off"],
-    'indent-legacy': ["error", 2],
-    // how to fix typescript import\export types?
-    'no-unused-vars': ["off"],
+    "vue/script-indent": ["error", 2, {
+      "baseIndent": 1,
+      "switchCase": 0,
+    }]
   },
   extends: [
-    '@nuxtjs'
-  ]
+    "plugin:vue/recommended",
+    "@vue/typescript",
+  ],
+  plugins: [
+    "vue",
+    "@typescript-eslint"
+  ],
 }

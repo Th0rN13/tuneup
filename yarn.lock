@@ -1243,7 +1243,7 @@
     "@types/uglify-js" "*"
     source-map "^0.6.0"
 
-"@typescript-eslint/eslint-plugin@^1.6.0":
+"@typescript-eslint/eslint-plugin@^1.1.0", "@typescript-eslint/eslint-plugin@^1.6.0":
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-1.6.0.tgz#a5ff3128c692393fb16efa403ec7c8a5593dab0f"
   integrity sha512-U224c29E2lo861TQZs6GSmyC0OYeRNg6bE9UVIiFBxN2MlA0nq2dCrgIVyyRbC05UOcrgf2Wk/CF2gGOPQKUSQ==
@@ -1253,7 +1253,7 @@
     requireindex "^1.2.0"
     tsutils "^3.7.0"
 
-"@typescript-eslint/parser@1.6.0":
+"@typescript-eslint/parser@1.6.0", "@typescript-eslint/parser@^1.1.0":
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-1.6.0.tgz#f01189c8b90848e3b8e45a6cdad27870529d1804"
   integrity sha512-VB9xmSbfafI+/kI4gUK3PfrkGmrJQfh0N4EScT1gZXSZyUxpsBirPL99EWZg9MmPG0pzq/gMtgkk7/rAHj4aQw==
@@ -1348,6 +1348,14 @@
     prettier "1.16.3"
     source-map "~0.6.1"
     vue-template-es2015-compiler "^1.9.0"
+
+"@vue/eslint-config-typescript@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@vue/eslint-config-typescript/-/eslint-config-typescript-4.0.0.tgz#a202983598a4a826460cbb8ee43826875b0f6673"
+  integrity sha512-uSMAMgw4xDgVdZQhpbtJRo8nMV4oOy3Ht8olfOo7xvYFYLMF2JZ1tDRKd9/NSusxA72O2Vma+HzmyzDHg9evcQ==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "^1.1.0"
+    "@typescript-eslint/parser" "^1.1.0"
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
