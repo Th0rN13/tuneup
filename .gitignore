@@ -9,3 +9,10 @@ npm-debug.log
 
 # Nuxt generate
 dist
+
+#My added files
+#Store some keys in .env file
+.env
+
+#temp folder - test some js request\etc
+test_js
