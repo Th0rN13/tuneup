@@ -1,6 +1,10 @@
-# swclick
+# EVE TuneUp
 
-> Swarm Clicker
+> Eve ship tuning service
+
+> Swagger API by swagger.js
+
+> Based on Nuxt\Vue\TS\PUG\SASS template
 
 ## Build Setup
 
@@ -18,5 +22,3 @@ $ npm start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
