@@ -1,7 +1,9 @@
+import express from 'express';
+
 export default {
   env: {},
   head: {
-    title: "swclick",
+    title: "EVE Tune-Up",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -16,6 +18,10 @@ export default {
   build: {},
   modules: [
     "@nuxtjs/axios",
+  ],
+  serverMiddleware: [
+    express.json(),
+    '~/api',
   ],
   axios: {}
 }

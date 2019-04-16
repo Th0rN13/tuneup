@@ -16,3 +16,6 @@ dist
 
 #temp folder - test some js request\etc
 test_js
+
+#VScode files
+.vscode
