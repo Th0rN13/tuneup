@@ -1,0 +1,7 @@
+{
+  "watch": [
+    "api"
+  ],
+  "ext": "ts",
+  "exec": "nuxt"
+}

@@ -20,7 +20,6 @@ export const actions: ActionTree<RootState, RootState> = {
     people = context.isStatic ?
       localRandomData :
       await context.app.$axios.$get("./random-data.json");
-
     commit("setPeople", people.slice(0, 10));
   }
 };
