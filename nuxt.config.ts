@@ -1,5 +1,3 @@
-import express from 'express';
-
 export default {
   env: {},
   head: {
@@ -20,7 +18,6 @@ export default {
     "@nuxtjs/axios",
   ],
   serverMiddleware: [
-    express.json(),
     '~/api',
   ],
   axios: {}
