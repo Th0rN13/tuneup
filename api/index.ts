@@ -27,10 +27,10 @@ app.use(express.json());
 app.use(sanitizer());
 
 const dbQuery = async (query: String) => {
-  let result: Promise<any>;
-  await mysql.createConnection(dbParams)
+  let result = await mysql.createConnection(dbParams)
     .then((conn) => (conn.query(query)))
-    .then(([rows, fields]) => (result = rows))
+    .then(([rows, fields]) => (rows))
+    .then((rows) => (rows));
   return result;
 }
 

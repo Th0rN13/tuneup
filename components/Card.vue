@@ -10,7 +10,7 @@
 
   @Component({})
   export default class Card extends Vue {
-    @Prop() person: Person
+    @Prop() person: Person | undefined;
   }
 </script>
 
